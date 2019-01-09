@@ -13,14 +13,16 @@ gem 'activerecord', '~> 5.2.1'
 gem 'activesupport', '~> 5.2.1'
 gem 'railties', '~> 5.2.1'
 
-gem 'active_model_serializers', '~> 0.10.0'
-gem 'bcrypt', '~> 3.1.7' # Use ActiveModel has_secure_password
-# gem 'jwt', '~> 2.1'
-# gem 'kaminari', '~> 1.1'
 gem 'oj', '~> 3.6' # fast JSON serialization
 gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 3.11'
 gem 'rack-cors', '~> 1.0'
+# gem 'active_model_serializers', '~> 0.10.0'
+# gem 'bcrypt', '~> 3.1.7' # Use ActiveModel has_secure_password
+# gem 'jwt', '~> 2.1'
+# gem 'kaminari', '~> 1.1'
+
+gem 'contentful', '~> 2.11'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false

@@ -37,6 +37,9 @@ Use environment variables to configure app. Necessary environment variables are 
 - DATABASE_URL
 - DATABASE_USERNAME
 - DATABASE_PASSWORD
+- CONTENTFUL_ACCESS_TOKEN
+- CONTENTFUL_SPACE_ID
+- CONTENTFUL_PRODUCT_CT_ID
 
 For development, [dotEnv](https://github.com/bkeepers/dotenv) gem used, you can provide `.env` files.
 See [gem](https://github.com/bkeepers/dotenv) for further information.
