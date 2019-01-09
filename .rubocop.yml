@@ -1,0 +1,25 @@
+require: rubocop-rspec
+
+Rails:
+  Enabled: true
+
+AllCops:
+  TargetRubyVersion: 2.6.0
+  Exclude:
+    - "bin/**/*"
+    - "db/**/*"
+    - "log/**/*"
+    - "script/*"
+    - "tmp/**/*"
+    - "vendor/bundle/**/*"
+  UseCache: true
+  CacheRootDirectory: tmp/rubocop-cache
+  MaxFilesInCache: 1000
+  DisplayCopNames: true
+
+Metrics/BlockLength:
+  ExcludedMethods: ["describe", "xdescribe", "context", "task"]
+
+RSpec/MultipleExpectations:
+  Max: 3
+# Please, this is left empty on purpose

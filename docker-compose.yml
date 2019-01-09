@@ -1,0 +1,10 @@
+version: "3"
+services:
+  postgres:
+    image: postgres:9.6.4-alpine
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_DB: contentful-sync_development
+      POSTGRES_USER: contentful-sync
+      POSTGRES_PASSWORD: contentful-sync
