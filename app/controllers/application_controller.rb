@@ -5,7 +5,7 @@ class ApplicationController < ActionController::API
   include Concerns::ErrorHandler
 
   def contentful
-    @client ||= Contentful::Client.new(
+    @contentful ||= Contentful::Client.new(
       access_token: ENV['CONTENTFUL_ACCESS_TOKEN'],
       space: ENV['CONTENTFUL_SPACE_ID'],
       dynamic_entries: :auto,

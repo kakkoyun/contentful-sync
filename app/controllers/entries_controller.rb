@@ -1,11 +1,8 @@
 # frozen_string_literal: true
 
+# API controller that lists entries for field agents
 class EntriesController < ApplicationController
   def index
-    entries = contentful.entries
-    binding.pry
-    puts entries
-    # render plain: entries
-    render json: contentful.entries
+    render json: Entry.all
   end
 end
