@@ -1,0 +1,2 @@
+class SyncMetadatum < ApplicationRecord
+end

@@ -6,7 +6,7 @@ Rails.application.routes.draw do
 
   resources :sync, only: [] do
     post :initial, on: :collection
-    post :update, on: :collection
+    post :incremental, on: :collection
   end
 
   resources :entries, only: [:index]
